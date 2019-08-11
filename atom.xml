@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>云主宰苍穹</title>
+  
+  <subtitle>Stay Hungry, Stay Foolish.</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="https://github.com/2694048168/"/>
+  <updated>2019-08-11T13:32:38.557Z</updated>
+  <id>https://github.com/2694048168/</id>
+  
+  <author>
+    <name>云主宰苍穹</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hexo搭建博客</title>
+    <link href="https://github.com/2694048168/Hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/2019/07/18/"/>
+    <id>https://github.com/2694048168/Hexo搭建博客/2019/07/18/</id>
+    <published>2019-07-18T12:06:41.000Z</published>
+    <updated>2019-08-11T13:32:38.557Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="Hexo简介"><a href="#Hexo简介" class="headerlink" title="Hexo简介"></a>Hexo简介</h2><p>&emsp;&emsp;Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用Markdown（或其他渲染引擎）解析文章，在极短的几秒钟内，就可利用靓丽的主题生成静态网页，特别适合搭建个人博客。Hexo以其简单、高效而且主题丰富多彩而著名，迅速地占据了一部分市场，值得尝试。<br>&emsp;&emsp;本博客就是采用Hexo+GitHubPages+NexT主题进行搭建的！</p><ul><li><span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv" title="https://hexo.io">Hexo官网<i class="fa fa-external-link"></i></span></li><li><a href="https://github.com/">GitHub官网</a></li><li><span class="exturl" data-url="aHR0cHM6Ly90aGVtZS1uZXh0Lm9yZy8=" title="https://theme-next.org/">NexT官网<i class="fa fa-external-link"></i></span></li></ul><h2 id="安装环境"><a href="#安装环境" class="headerlink" title="安装环境"></a>安装环境</h2><p>&emsp;&emsp;Hexo在搭建时需要Node.js的环境支持，同时需要命令终端的支持。针对不同的操作系统Windows、Linux或者Mac，在配置搭建环境时要下载安装对应的版本，在Windows系统下，建议使用GitBash。Mac和linux都是自带的有BashShell终端。<br>&emsp;&emsp;由于Node.js是国外的网站，有时候由于网络的一些因素，容易影响我们采用npm对资源的访问速度，故此可以采用国内的阿里巴巴的镜像，可以加快访问的速度以及效率。首先在终端采用npm命令安装镜像，成功后就可以采用cnpm命令代替npm命令了。</p><ul><li>npm install -g cnpm –registry=<span class="exturl" data-url="aHR0cHM6Ly9yZWdpc3RyeS5ucG0udGFvYmFvLm9yZw==" title="https://registry.npm.taobao.org">https://registry.npm.taobao.org<i class="fa fa-external-link"></i></span></li><li><span class="exturl" data-url="aHR0cHM6Ly9ub2RlanMub3JnL2VuLw==" title="https://nodejs.org/en/">Node.js<i class="fa fa-external-link"></i></span></li><li><a href="https://github.com/waylau/git-for-win">Git</a></li></ul><h2 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a>安装Hexo</h2><p>&emsp;&emsp;在下载、安装并配置好环境后，就可以进行安装Hexo。首先打开BashShell终端，创建一个空的目录来作为整个博客项目的工作空间，然后再使用命令进行安装hexo，安装成功后就对Hexo进行初始化，初始化成功后可以查看整个工作空间的目录结构和文件树。</p><ul><li>创建一个空文件夹blog：<br>$ mkdir blog<br></li><li>在终端使用命令安装Hexo：<br>$ npm install -g hexo-cli<br></li><li>初始化Hexo：<br>$ hexo init<br></li><li>查看hexo生成的目录:<br>$ cd blog<br>$ ls<br></li></ul><h2 id="配置NexT主题"><a href="#配置NexT主题" class="headerlink" title="配置NexT主题"></a>配置NexT主题</h2><p>&emsp;&emsp;在Hexo的官网可以找到许许多多的主题，寻找适合自己喜欢的主题，可以通过BashShell终端进行下载，也可以下载后解压到站点的主题文件夹下即可，然后打开站点的配置文件，搜索到theme将其值修改为自己下载的主题名即可。</p><ul><li>在终端使用命令下载主题：<br>$ git clone <a href="https://github.com/theme-next/hexo-theme-next">https://github.com/theme-next/hexo-theme-next</a> themes/next ./blog/themes/</li><li>修改配置文件_config.yml:<br>$ vim _config.yml<br>将theme的值由landscape修改为hexo-theme-next即可<br></li></ul><h2 id="配置GitHub的Page："><a href="#配置GitHub的Page：" class="headerlink" title="配置GitHub的Page："></a>配置GitHub的Page：</h2><p>&emsp;&emsp;首先要有一个GitHub账号，其次创建一个规定的GitHubPages主页仓库。然后就可以对站点的配置文件进行修改了，添加如下内容即可。而且不仅可以使用GitHub的Pages进行托管，也可以使用国内的Coding的Pages进行托管，同时也可以使用两者进行负载均衡，进行国内外的分流托管。</p><ul><li>修改配置文件_config：<br>在文件末尾的deploy添加内容：<br>deploy:<br>type: git<br>repo: <a href="mailto:git@github.com">git@github.com</a>:2694048168/2694048168.github.io.git<br>branch: master</li></ul><h2 id="写博客文章"><a href="#写博客文章" class="headerlink" title="写博客文章"></a>写博客文章</h2><p>&emsp;&emsp;编写自己的博客文章(采用markdown格式)，可以在终端采用Vim进行编写，也可以用Notepad++类似的编辑器编写，只要博客文章所在的路径是正确的，就可以被Hexo识别并读取到即可。</p><ul><li>在终端命令创建文章：<br>$ hexo new file_name <br></li><li>使用Vim等编辑器编辑文章</li></ul><h2 id="更新Hexo并上传"><a href="#更新Hexo并上传" class="headerlink" title="更新Hexo并上传"></a>更新Hexo并上传</h2><p>&emsp;&emsp;在更新上传之前可以在本地进行预览一下，即就是先清除clean、生成generate、然后start启动本地，在本地的4000端口查看即可。没有问题后，在进行上传deploy。当然这些常用的命令都是可以编写一个shell脚本进行的，因为每次都需要的，强烈建议写成一个shell脚本。</p><ul><li>在终端依次使用命令：<br>$ hexo clean<br>$ hexo g<br>$ hexo d <br></li></ul><h2 id="终端访问"><a href="#终端访问" class="headerlink" title="终端访问"></a>终端访问</h2><p>&emsp;&emsp;通过PC端浏览器或者智能终端浏览器访问即可。</p><ul><li>本地访问：<br><span class="exturl" data-url="aHR0cDovL2xvY2FsaG9zdDo0MDAw" title="http://localhost:4000">http://localhost:4000<i class="fa fa-external-link"></i></span></li><li>访问地址：<br><span class="exturl" data-url="aHR0cHM6Ly8yNjk0MDQ4MTY4LmdpdGh1Yi5pbw==" title="https://2694048168.github.io">https://2694048168.github.io<i class="fa fa-external-link"></i></span></li></ul><h2 id="注意说明"><a href="#注意说明" class="headerlink" title="注意说明"></a>注意说明</h2><ul><li>在Windows系统下，终端采用GitBash即可</li><li>在Linux系统下，终端采用自带的Bash即可</li><li>Linux系统用户需要注意命令的权限问题</li><li>在Mac系统下，终端采用自带的Bash即可</li><li>整个操作过程全部都在blog目录下，注意操作命令的路径问题</li><li>博客文章格式采用Markdown</li><li>hexo s 命令是启动本地hexo，访问通过<span class="exturl" data-url="aHR0cDovL2xvY2FsaG9zdDo0MDAw" title="http://localhost:4000">http://localhost:4000<i class="fa fa-external-link"></i></span></li><li>关于github的page详情查看：<span class="exturl" data-url="aHR0cHM6Ly9wYWdlcy5naXRodWIuY29tLw==" title="https://pages.github.com/">github.pages<i class="fa fa-external-link"></i></span></li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;Hexo简介&quot;&gt;&lt;a href=&quot;#Hexo简介&quot; class=&quot;headerlink&quot; title=&quot;Hexo简介&quot;&gt;&lt;/a&gt;Hexo简介&lt;/h2&gt;&lt;p&gt;&amp;emsp;&amp;emsp;Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用Markdown（或其他渲
+      
+    
+    </summary>
+    
+      <category term="工具" scheme="https://github.com/2694048168/categories/%E5%B7%A5%E5%85%B7/"/>
+    
+    
+      <category term="Hexo" scheme="https://github.com/2694048168/tags/Hexo/"/>
+    
+      <category term="GitHub" scheme="https://github.com/2694048168/tags/GitHub/"/>
+    
+      <category term="NexT" scheme="https://github.com/2694048168/tags/NexT/"/>
+    
+  </entry>
+  
+</feed>

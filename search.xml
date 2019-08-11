@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title><![CDATA[Hexo搭建博客]]></title>
+    <url>%2FHexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%2F2019%2F07%2F18%2F</url>
+    <content type="text"><![CDATA[Hexo简介&emsp;&emsp;Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用Markdown（或其他渲染引擎）解析文章，在极短的几秒钟内，就可利用靓丽的主题生成静态网页，特别适合搭建个人博客。Hexo以其简单、高效而且主题丰富多彩而著名，迅速地占据了一部分市场，值得尝试。&emsp;&emsp;本博客就是采用Hexo+GitHubPages+NexT主题进行搭建的！ Hexo官网 GitHub官网 NexT官网 安装环境&emsp;&emsp;Hexo在搭建时需要Node.js的环境支持，同时需要命令终端的支持。针对不同的操作系统Windows、Linux或者Mac，在配置搭建环境时要下载安装对应的版本，在Windows系统下，建议使用GitBash。Mac和linux都是自带的有BashShell终端。&emsp;&emsp;由于Node.js是国外的网站，有时候由于网络的一些因素，容易影响我们采用npm对资源的访问速度，故此可以采用国内的阿里巴巴的镜像，可以加快访问的速度以及效率。首先在终端采用npm命令安装镜像，成功后就可以采用cnpm命令代替npm命令了。 npm install -g cnpm –registry=https://registry.npm.taobao.org Node.js Git 安装Hexo&emsp;&emsp;在下载、安装并配置好环境后，就可以进行安装Hexo。首先打开BashShell终端，创建一个空的目录来作为整个博客项目的工作空间，然后再使用命令进行安装hexo，安装成功后就对Hexo进行初始化，初始化成功后可以查看整个工作空间的目录结构和文件树。 创建一个空文件夹blog：$ mkdir blog 在终端使用命令安装Hexo：$ npm install -g hexo-cli 初始化Hexo：$ hexo init 查看hexo生成的目录:$ cd blog$ ls 配置NexT主题&emsp;&emsp;在Hexo的官网可以找到许许多多的主题，寻找适合自己喜欢的主题，可以通过BashShell终端进行下载，也可以下载后解压到站点的主题文件夹下即可，然后打开站点的配置文件，搜索到theme将其值修改为自己下载的主题名即可。 在终端使用命令下载主题：$ git clone https://github.com/theme-next/hexo-theme-next themes/next ./blog/themes/ 修改配置文件_config.yml:$ vim _config.yml将theme的值由landscape修改为hexo-theme-next即可 配置GitHub的Page：&emsp;&emsp;首先要有一个GitHub账号，其次创建一个规定的GitHubPages主页仓库。然后就可以对站点的配置文件进行修改了，添加如下内容即可。而且不仅可以使用GitHub的Pages进行托管，也可以使用国内的Coding的Pages进行托管，同时也可以使用两者进行负载均衡，进行国内外的分流托管。 修改配置文件_config：在文件末尾的deploy添加内容：deploy:type: gitrepo: git@github.com:2694048168/2694048168.github.io.gitbranch: master 写博客文章&emsp;&emsp;编写自己的博客文章(采用markdown格式)，可以在终端采用Vim进行编写，也可以用Notepad++类似的编辑器编写，只要博客文章所在的路径是正确的，就可以被Hexo识别并读取到即可。 在终端命令创建文章：$ hexo new file_name 使用Vim等编辑器编辑文章 更新Hexo并上传&emsp;&emsp;在更新上传之前可以在本地进行预览一下，即就是先清除clean、生成generate、然后start启动本地，在本地的4000端口查看即可。没有问题后，在进行上传deploy。当然这些常用的命令都是可以编写一个shell脚本进行的，因为每次都需要的，强烈建议写成一个shell脚本。 在终端依次使用命令：$ hexo clean$ hexo g$ hexo d 终端访问&emsp;&emsp;通过PC端浏览器或者智能终端浏览器访问即可。 本地访问：http://localhost:4000 访问地址：https://2694048168.github.io 注意说明 在Windows系统下，终端采用GitBash即可 在Linux系统下，终端采用自带的Bash即可 Linux系统用户需要注意命令的权限问题 在Mac系统下，终端采用自带的Bash即可 整个操作过程全部都在blog目录下，注意操作命令的路径问题 博客文章格式采用Markdown hexo s 命令是启动本地hexo，访问通过http://localhost:4000 关于github的page详情查看：github.pages]]></content>
+      <categories>
+        <category>工具</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+        <tag>GitHub</tag>
+        <tag>NexT</tag>
+      </tags>
+  </entry>
+</search>
