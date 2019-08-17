@@ -66,11 +66,11 @@
       <category term="计算机语言" scheme="https://2694048168.github.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%AF%AD%E8%A8%80/"/>
     
     
-      <category term="C语言" scheme="https://2694048168.github.io/tags/C%E8%AF%AD%E8%A8%80/"/>
-    
       <category term="计算机语言" scheme="https://2694048168.github.io/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%AF%AD%E8%A8%80/"/>
     
       <category term="编程语言" scheme="https://2694048168.github.io/tags/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/"/>
+    
+      <category term="C语言" scheme="https://2694048168.github.io/tags/C%E8%AF%AD%E8%A8%80/"/>
     
   </entry>
   
@@ -95,11 +95,11 @@
       <category term="工具" scheme="https://2694048168.github.io/categories/%E5%B7%A5%E5%85%B7/"/>
     
     
-      <category term="CodeBlocks" scheme="https://2694048168.github.io/tags/CodeBlocks/"/>
-    
       <category term="C语言" scheme="https://2694048168.github.io/tags/C%E8%AF%AD%E8%A8%80/"/>
     
       <category term="GCC" scheme="https://2694048168.github.io/tags/GCC/"/>
+    
+      <category term="CodeBlocks" scheme="https://2694048168.github.io/tags/CodeBlocks/"/>
     
   </entry>
   
@@ -124,11 +124,11 @@
       <category term="工具" scheme="https://2694048168.github.io/categories/%E5%B7%A5%E5%85%B7/"/>
     
     
+      <category term="C语言" scheme="https://2694048168.github.io/tags/C%E8%AF%AD%E8%A8%80/"/>
+    
       <category term="CodeBlocks" scheme="https://2694048168.github.io/tags/CodeBlocks/"/>
     
       <category term="IDE" scheme="https://2694048168.github.io/tags/IDE/"/>
-    
-      <category term="C语言" scheme="https://2694048168.github.io/tags/C%E8%AF%AD%E8%A8%80/"/>
     
   </entry>
   
