@@ -1,69 +1,41 @@
 ### 博客+主题+网页
-Hexo+NexT+GitHubPages
+**Hexo v3.90 + NexT v7.3.0 + GitHubPages**
 
-### 插件
+### 配置
+- hexo站点配置文件、各个文件目录的功能
+- next主题配置文件、各个文件目录的功能
+
 - 订阅RSS
-cnpm install hexo-generate-feed
 
+- 配置关于、标签、分类、404页面
 
-hexo配置
-plugins: hexo-generate-feed
-feed: # RSS订阅插件
-  type: atom
-  path: atom.xml
-  limit: 0
-  
-主题配置
-rss: /atom.xml
+- 配置社交链接、友情链接
 
-- 压缩静态资源文件
-cnpm install gulp --save
+- 文章外部分享链接功能
 
-cnpm install gulp-minify-css --save
-cnpm install gulp-uglify --save
-cnpm install gulp-htmlmin --save
-cnpm install gulp-htmlclean --save
-cnpm install gulp-imagemin --save
+- 文章版本说明功能
 
-创建根目录下的gulpfile.js文件
+- 文章打赏功能，微信、支付宝二维码
 
-hexo g 后使用命令gulp
+- 配置folk me github功能
 
-- 上传网页
-cnpm install hexo-deployer-git --save
+- 动态背景图片，实时更新图片
 
-hexo配置
-deploy:
-  type: git
-  repo: git@github.com:2694048168/2694048168.github.io.git
-  branch: master
+- 文章字数、浏览量、阅读时间、站点总字数等配置
+
+- 相关文章推荐功能
+
+- 文章显示部分，阅读全文功能
+
+- 压缩静态资源文件gulp
+
+- 上传GitHub
   
 - gittalk评论设置
-获取gittalk的ID和秘钥
 
-CDN
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
-  <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+- 本地搜索Local search
 
-  <!-- or -->
+- 网站SEO，the sitemap of Google、百度的站点地图
 
-  <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
-  <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
-
-配置主题
-gitalk:
-  enable: true
-  github_id: 2694048168 
-  repo: 2694048168.github.io
-  client_id: aebff323e44f1516e521
-  client_secret: 3934128e2a234e13b6118386667dee31ab703836
-  admin_user: 2694048168
-  distraction_free_mode: true 
-  # Gitalk's display language depends on user's browser or system environment
-  # If you want everyone visiting your site to see a uniform language, you can set a force language value
-  # Available values: en | es-ES | fr | ru | zh-CN | zh-TW
-  language: en | es-ES | fr | ru | zh-CN | zh-TW
-  
-- 本地搜索
-# Local search
-# Dependencies: https://github.com/theme-next/hexo-generator-searchdb
+- 本地测试hexo博客shell脚本命令编写
+- 上传博客到GitHub的shell脚本命令编写
