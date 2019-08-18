@@ -10,7 +10,6 @@
       <tags>
         <tag>计算机语言</tag>
         <tag>编程语言</tag>
-        <tag>计算机语言发展史</tag>
       </tags>
   </entry>
   <entry>
@@ -23,7 +22,6 @@
       <tags>
         <tag>C语言</tag>
         <tag>计算机语言</tag>
-        <tag>编程语言</tag>
       </tags>
   </entry>
   <entry>
@@ -34,7 +32,6 @@
         <category>工具</category>
       </categories>
       <tags>
-        <tag>CodeBlocks</tag>
         <tag>C语言</tag>
         <tag>GCC</tag>
       </tags>
@@ -48,14 +45,13 @@
       </categories>
       <tags>
         <tag>CodeBlocks</tag>
-        <tag>IDE</tag>
         <tag>C语言</tag>
       </tags>
   </entry>
   <entry>
     <title><![CDATA[全球科技通史-吴军]]></title>
     <url>%2F%E5%85%A8%E7%90%83%E7%A7%91%E6%8A%80%E9%80%9A%E5%8F%B2-%E5%90%B4%E5%86%9B%2F</url>
-    <content type="text"><![CDATA[推荐序从科技视角俯瞰历史，从历史视角理解科技吴军博士的《全球科技通史》帮助我们从历史视角思考科学和技术的过去和未来，值得推荐。科学是发现自然规律，技术是对改造世界有用的发明。科学方法论的起点是“怀疑一切”。 前言远古科技黎明之前文明曙光古代科技农耕文明文明复兴近代科技科学启蒙工业革命新工业现代科技原子时代信息时代未来世界参考文献后记 人类历史最精彩的部分是科技史索引]]></content>
+    <content type="text"><![CDATA[推荐序从科技视角俯瞰历史，从历史视角理解科技 吴军博士的《全球科技通史》帮助我们从历史视角思考科学和技术的过去和未来，值得推荐。科学是发现自然规律，技术是对改造世界有用的发明。科学方法论的起点是“怀疑一切”。 前言科技的地位和作用 从空间维度看，在文明过程中独一无二，是一种进步的力量。 从时间维度看，是世界上唯一能获得叠加性进步的力量。 科技发展的历史必然性 从能量角度看，宇宙的本源就是能量，物质就是由能量构成的。 从信息角度看，人类的实践本质上就是获取能量并利用能量改变周围的环境。 远古科技人类和其他动物的一个本质区别就是前者有能力主动改变周围的环境，这通常归结为智力因素。人类让自己的活动产生多余的能量(除去维持自身生长和生存所需的)，从根本上只有两个方法：开源和节流。文化和文明是不一样的概念 文化(civilization)——城市、文字记载和金属工具 文明(culture)——人类定居、农业和畜牧业 气候的骤变对很多物种来说都是灭顶之灾，太阳的活动映射地球获取能量的变化，从而使得地球的生物随着能量而演变，人类也就随之进化，逐步定居，开始出现了文明的曙光。而这时的科技主要围绕两个核心： 获取更多的能量便于生存 总结、记录并传授经验便于有效改变生存环境 黎明之前文明曙光古代科技农耕文明文明复兴近代科技科学启蒙工业革命新工业现代科技原子时代信息时代未来世界参考文献后记 人类历史最精彩的部分是科技史索引]]></content>
       <categories>
         <category>读书</category>
       </categories>
@@ -73,7 +69,6 @@
       </categories>
       <tags>
         <tag>Linux</tag>
-        <tag>Linux常用命令</tag>
         <tag>Linux命令</tag>
       </tags>
   </entry>
@@ -87,7 +82,6 @@
       <tags>
         <tag>Linux</tag>
         <tag>Vi/Vim</tag>
-        <tag>Linux编辑器</tag>
       </tags>
   </entry>
   <entry>
@@ -124,8 +118,6 @@
       <tags>
         <tag>Hadoop</tag>
         <tag>大数据</tag>
-        <tag>分布式文件系统</tag>
-        <tag>分布式并行计算</tag>
       </tags>
   </entry>
   <entry>
@@ -151,13 +143,12 @@
       <tags>
         <tag>Hadoop</tag>
         <tag>大数据</tag>
-        <tag>分布式环境</tag>
       </tags>
   </entry>
   <entry>
     <title><![CDATA[Hexo搭建博客]]></title>
     <url>%2FHexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%2F</url>
-    <content type="text"><![CDATA[Hexo简介&emsp;&emsp;Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用Markdown（或其他渲染引擎）解析文章，在极短的几秒钟内，就可利用靓丽的主题生成静态网页，特别适合搭建个人博客。Hexo以其简单、高效而且主题丰富多彩而著名，迅速地占据了一部分市场，值得尝试。&emsp;&emsp;本博客就是采用Hexo+GitHubPages+NexT主题进行搭建的！ Hexo官网 GitHub官网 NexT官网 安装环境&emsp;&emsp;Hexo在搭建时需要Node.js的环境支持，同时需要命令终端的支持。针对不同的操作系统Windows、Linux或者Mac，在配置搭建环境时要下载安装对应的版本，在Windows系统下，建议使用GitBash。Mac和linux都是自带的有BashShell终端。&emsp;&emsp;由于Node.js是国外的网站，有时候由于网络的一些因素，容易影响我们采用npm对资源的访问速度，故此可以采用国内的阿里巴巴的镜像，可以加快访问的速度以及效率。首先在终端采用npm命令安装镜像，成功后就可以采用cnpm命令代替npm命令了。 npm install -g cnpm –registry=https://registry.npm.taobao.org Node.js Git 安装Hexo&emsp;&emsp;在下载、安装并配置好环境后，就可以进行安装Hexo。首先打开BashShell终端，创建一个空的目录来作为整个博客项目的工作空间，然后再使用命令进行安装hexo，安装成功后就对Hexo进行初始化，初始化成功后可以查看整个工作空间的目录结构和文件树。 创建一个空文件夹blog：$ mkdir blog 在终端使用命令安装Hexo：$ npm install -g hexo-cli 初始化Hexo：$ hexo init 查看hexo生成的目录:$ cd blog$ ls 配置NexT主题&emsp;&emsp;在Hexo的官网可以找到许许多多的主题，寻找适合自己喜欢的主题，可以通过BashShell终端进行下载，也可以下载后解压到站点的主题文件夹下即可，然后打开站点的配置文件，搜索到theme将其值修改为自己下载的主题名即可。 在终端使用命令下载主题：$ git clone https://github.com/theme-next/hexo-theme-next themes/next ./blog/themes/ 修改配置文件_config.yml:$ vim _config.yml将theme的值由landscape修改为hexo-theme-next即可 配置GitHub的Page：&emsp;&emsp;首先要有一个GitHub账号，其次创建一个规定的GitHubPages主页仓库。然后就可以对站点的配置文件进行修改了，添加如下内容即可。而且不仅可以使用GitHub的Pages进行托管，也可以使用国内的Coding的Pages进行托管，同时也可以使用两者进行负载均衡，进行国内外的分流托管。 修改配置文件_config：在文件末尾的deploy添加内容：deploy:type: gitrepo: git@github.com:2694048168/2694048168.github.io.gitbranch: master 写博客文章&emsp;&emsp;编写自己的博客文章(采用markdown格式)，可以在终端采用Vim进行编写，也可以用Notepad++类似的编辑器编写，只要博客文章所在的路径是正确的，就可以被Hexo识别并读取到即可。 在终端命令创建文章：$ hexo new file_name 使用Vim等编辑器编辑文章 更新Hexo并上传&emsp;&emsp;在更新上传之前可以在本地进行预览一下，即就是先清除clean、生成generate、然后start启动本地，在本地的4000端口查看即可。没有问题后，在进行上传deploy。当然这些常用的命令都是可以编写一个shell脚本进行的，因为每次都需要的，强烈建议写成一个shell脚本。 在终端依次使用命令：$ hexo clean$ hexo g$ hexo d 终端访问&emsp;&emsp;通过PC端浏览器或者智能终端浏览器访问即可。 本地访问：http://localhost:4000 访问地址：https://2694048168.github.io 注意说明 在Windows系统下，终端采用GitBash即可 在Linux系统下，终端采用自带的Bash即可 Linux系统用户需要注意命令的权限问题 在Mac系统下，终端采用自带的Bash即可 整个操作过程全部都在blog目录下，注意操作命令的路径问题 博客文章格式采用Markdown hexo s 命令是启动本地hexo，访问通过http://localhost:4000 关于github的page详情查看：github.pages]]></content>
+    <content type="text"><![CDATA[Hexo简介&emsp;&emsp;Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用Markdown（或其他渲染引擎）解析文章，在极短的几秒钟内，就可利用靓丽的主题生成静态网页，特别适合搭建个人博客。Hexo以其简单、高效而且主题丰富多彩而著名，迅速地占据了一部分市场，值得尝试。&emsp;&emsp;本博客就是采用Hexo v3.9.0 + GitHubPages + NexT v7.3.0 主题进行搭建的！ Hexo官网点击这里 GitHub官网点击这里 NexT主题官网点击这里 安装环境&emsp;&emsp;Hexo在搭建时需要Node.js的环境支持，同时需要命令终端的支持。针对不同的操作系统Windows、Linux或者Mac，在配置搭建环境时要下载安装对应的版本，在Windows系统下，建议使用GitBash。Mac和linux都是自带的有BashShell终端。&emsp;&emsp;由于Node.js是国外的网站，有时候由于网络的一些因素，容易影响我们采用npm对资源的访问速度，故此可以采用国内的阿里巴巴的镜像，可以加快访问的速度以及效率。首先在终端采用npm命令安装镜像，成功后就可以采用cnpm命令代替npm命令了。 1- npm install -g cnpm --registry=https://registry.npm.taobao.org Node.js官网点击这里 Git官网点击这里 安装Hexo&emsp;&emsp;在下载、安装并配置好环境后，就可以进行安装Hexo。首先打开BashShell终端，创建一个空的目录来作为整个博客项目的工作空间，然后再使用命令进行安装hexo，安装成功后就对Hexo进行初始化，初始化成功后可以查看整个工作空间的目录结构和文件树。 创建一个空文件夹blog：$ mkdir blog 在终端使用命令安装Hexo：$ npm install -g hexo-cli 初始化Hexo：$ hexo init 查看hexo生成的目录:$ cd blog$ ls &emsp;&emsp;了解Hexo的文件目录架构以及文件目录的作用，这是很有必要的，特别对于配置Hexo的一些信息，然后在结合Hexo的官网的配置说明，就可以配置成自己想要的。 123456789101112.├── .deploy #部署文件夹├── public #html源码，hexo g生成├── scaffolds #模板├── scripts #扩展脚本├── source #文章源码| ├── _drafts #草稿| └── _posts #文章├── themes #主题| ├── next #NexT主题├── _config.yml #博客配置└── package.json #应用程序数据 配置NexT主题&emsp;&emsp;在Hexo的官网可以找到许许多多的主题，寻找适合自己喜欢的主题，可以通过BashShell终端进行下载，也可以下载后解压到站点的主题文件夹下即可，然后打开站点的配置文件，搜索到theme将其值修改为自己下载的主题名即可。 在终端使用命令下载主题： 1$ git clone https://github.com/theme-next/hexo-theme-next themes/next ./blog/themes/ 修改配置文件_config.yml:$ vim _config.yml将theme的值由landscape修改为hexo-theme-next即可 &emsp;&emsp;了解NexT主题的文件目录架构以及文件目录的作用，这也是很有必要的，特别对于配置NexT主题的一些信息，然后在结合NexT主题的官网配置说明，就可以配置成自己想要的主题了。&emsp;&emsp;说明提示一点，NexT主题V7.3.0版本后，将以前版本的用户自定义配置custom的功能的路径修改了，在主题配置文件中的custom_file_path:这一段有说明。Define custom file paths. Create your custom files in site directory source/_data and uncomment needed files below. 1234567891011121314151617181920212223242526272829303132333435363738├── .github #github信息├── languages #多语言| ├── _en.yml #默认语言| └── zh-CN.yml #简体中文| └── zh-TW.yml #繁体中文├── layout #布局，根目录下的*.swig文件是对主页，分页，存档等的控制| ├── _custom #可以自定义的模板，覆盖原有模板| | ├── head.swig #文首样式| | ├── header.swig #头部样式| | ├── sidebar.swig #侧边栏样式| ├── _macro #可以自定义的模板，覆盖原有模板| | ├── post.swig #文章模板| | ├── reward.swig #打赏模板| | ├── sidebar.swig #侧边栏模板| ├── _partial #局部的布局| | ├── head #头部模板| | ├── search #搜索模板| | ├── share #分享模板| ├── _script #局部的布局| ├── _third-party #第三方模板| ├── _layout.swig #主页面模板| ├── index.swig #主页面模板| ├── page #页面模板| └── tag.swig #tag模板├── scripts #script源码| ├── tags #tags的script源码| ├── marge.js #页面模板├── source #源码| ├── css #css源码| | ├── _common #*.styl基础css| | ├── _custom #*.styl自定义局部css| | └── _mixins #mixins的css| ├── fonts #字体| ├── images #图片| ├── js #javascript源代码| └── lib #引用库├── _config.yml #主题配置文件└── README.md #说明文件 配置GitHub的Page：&emsp;&emsp;首先要有一个GitHub账号，其次创建一个规定的GitHubPages主页仓库。然后就可以对站点的配置文件进行修改了，添加如下内容即可。而且不仅可以使用GitHub的Pages进行托管，也可以使用国内的Coding的Pages进行托管，同时也可以使用两者进行负载均衡，进行国内外的分流托管。 修改配置文件_config：在文件末尾的deploy添加内容： 123456deploy: type: git repo: git@github.com:github_user/github_user.github.io.git git@git.coding.net:coding_user/coding_user.git branch: master 写博客文章&emsp;&emsp;编写自己的博客文章(采用markdown格式)，可以在终端采用Vim进行编写，也可以用Notepad++类似的编辑器编写，只要博客文章所在的路径是正确的，就可以被Hexo识别并读取到即可。 在终端命令创建文章：$ hexo new file_name 使用Vim等编辑器编辑文章 更新Hexo并上传&emsp;&emsp;在更新上传之前可以在本地进行预览一下，即就是先清除clean、生成generate、然后start启动本地，在本地的4000端口查看即可。没有问题后，在进行上传deploy。当然这些常用的命令都是可以编写一个shell脚本进行的，因为每次都需要的，强烈建议写成一个shell脚本。 在终端依次使用命令： 1234$ hexo clean # 清理hexo的缓存静态文件资源$ hexo g # hexo生成静态资源$ hexo s # hexo启动本地访问$ hexo d # hexo上传指定的网站 终端访问&emsp;&emsp;通过PC端浏览器或者智能终端浏览器访问即可。 本地访问：http://localhost:4000 访问地址：https://2694048168.github.io 注意说明 在Windows系统下，终端采用GitBash即可 在Linux系统下，终端采用自带的Bash即可 Linux系统用户需要注意命令的权限问题 在Mac系统下，终端采用自带的Bash即可 整个操作过程全部都在blog目录下，注意操作命令的路径问题 博客文章格式采用Markdown hexo s 命令是启动本地hexo，访问通过http://localhost:4000 关于github的page详情查看：github.pages]]></content>
       <categories>
         <category>工具</category>
       </categories>
