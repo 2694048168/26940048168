@@ -1,6 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[TensorFlow环境安装]]></title>
+    <url>%2FTensorFlow%E7%8E%AF%E5%A2%83%E5%AE%89%E8%A3%85%2F</url>
+    <content type="text"><![CDATA[Install TensorFlow with pipInstall the tensorflow with python3 and the pip3 on Ubuntuthe page of installation of tensorflow TensorFlow 2.0 RC is available tensorflow==2.0.0-rc0 —Preview TF 2.0 RC build for CPU-only (unstable) tensorflow-gpu==2.0.0-rc0 —Preview TF 2.0 RC build with GPU support (unstable, Ubuntu and Windows) Available packages tensorflow —Latest stable release for CPU-only tensorflow-gpu —Latest stable release with GPU support (Ubuntu and Windows) tf-nightly —Preview nightly build for CPU-only (unstable) tf-nightly-gpu —Preview nightly build with GPU support (unstable, Ubuntu and Windows) System requirements pip 19.0 or later Ubuntu 16.04 or later (64-bit) macOS 10.12.6 (Sierra) or later (64-bit) (no GPU support) Windows 7 or later (64-bit) (Python 3 only) Raspbian 9.0 or later Hardware requirements Starting with TensorFlow 1.6, binaries use AVX instructions which may not run on older CPUs. Read the GPU support guide to set up a CUDA®-enabled GPU card on Ubuntu or Windows. InstallationThe following are the necessary basic conditions. Install the python3 Install the pip3 Install tensorflow or tensorflow-gpu If install the tensorflow-gpu, then install the drive of NVIDIA and CUDA The following options are for reference only. Install the virtualenv Install the Anaconda Install the IDE-PyCharm for Python Install the Python-TensorFlow development environment on your systemDetection system environment 123python3 --versionpip3 --versionvirtualenv --version Installation system environment 123sudo apt updatesudo apt install python3-dev python3-pipsudo pip3 install -U virtualenv # system-wide install Create a new virtual environment by choosing a Python interpreter and making a ./venv directory to hold it: 1virtualenv --system-site-packages -p python3 ./venv Activate the virtual environment using a shell-specific command: source ./venv/bin/activate # sh, bash, ksh, or zsh When virtualenv is active, your shell prompt is prefixed with (venv).Install packages within a virtual environment without affecting the host system setup. Start by upgrading pip: 12pip install --upgrade pippip list # show packages installed within the virtual environment And to exit virtualenv later: 1deactivate # don't exit until you're done using TensorFlow Install the TensorFlow pip packageChoose one of the following TensorFlow packages to install from PyPI:the page of PyPI tensorflow —Latest stable release for CPU-only (recommended for beginners) tensorflow-gpu —Latest stable release with GPU support (Ubuntu and Windows) tf-nightly —Preview nightly build for CPU-only (unstable) tf-nightly-gpu —Preview nightly build with GPU support (unstable, Ubuntu and Windows) tensorflow==2.0.0-rc0 —Preview TF 2.0 RC build for CPU-only (unstable) tensorflow-gpu==2.0.0-rc0 —Preview TF 2.0 RC build with GPU support (unstable, Ubuntu and Windows) Verify the install: 12345source ./venv/bin/activatepython3import tensorflow as tfprint(tf.__tf.version__)print(tf.__tf.path__) the page of installation of tensorflow supported the GPU 如果我们要同时开发多个应用程序，那这些应用程序都会共用一个Python，就是安装在系统的Python 3。如果应用A需要python2.7，而应用B需要python3怎么办？这种情况下，每个应用可能需要各自拥有一套“独立”的Python运行环境。virtualenv就是用来为一个应用创建一套“隔离”的Python运行环境。这样就能很好的解决在同一个系统中为每一个应用所依赖的对应的Python开发版本的问题。 Anaconda指的是一个开源的Python发行版本，其包含了conda、Python等180多个科学包及其依赖项。因为包含了大量的科学包，Anaconda 的下载文件比较大（约 531 MB），如果只需要某些包，或者需要节省带宽或存储空间，也可以使用Miniconda这个较小的发行版（仅包含conda和 Python）。 PyCharm是一种Python IDE，带有一整套可以帮助用户在使用Python语言开发时提高其效率的工具，比如调试、语法高亮、Project管理、代码跳转、智能提示、自动完成、单元测试、版本控制。此外，该IDE提供了一些高级功能，以用于支持Django框架下的专业Web开发。 NVIDIA公司（纳斯达克代码：NVDA）是全球可编程图形处理技术领袖。与ATI（后被AMD收购）齐名，专注于打造能够增强个人和专业计算平台的人机交互体验的产品。公司的图形和通信处理器拥有广泛的市场，已被多种多样的计算平台采用，包括个人数字媒体PC、商用PC、专业工作站、数字内容创建系统、笔记本电脑、军用导航系统和视频游戏控制台等。NVIDIA全球雇员数量超过4000人。全球各地众多OEM厂商、显卡制造商、系统制造商、消费类电子产品公司都选择NVIDIA的处理器作为其娱乐和商用解决方案的核心组件。在PC应用领域（例如制造、科研、电子商务、娱乐和教育等），NVIDIA公司获奖不断的图形处理器可以提供出色的性能和鲜锐的视觉效果。其媒体和通信处理器能够执行宽带连接和通信应用中要求十分苛刻的多媒体处理任务，并在音频应用能力方面取得突破。 CUDA（Compute Unified Device Architecture），是显卡厂商NVIDIA推出的运算平台。 CUDA™是一种由NVIDIA推出的通用并行计算架构，该架构使GPU能够解决复杂的计算问题。 它包含了CUDA指令集架构（ISA）以及GPU内部的并行计算引擎。 开发人员现在可以使用C语言来为CUDA™架构编写程序，C语言是应用最广泛的一种高级编程语言。所编写出的程序可以在支持CUDA™的处理器上以超高性能运行。CUDA3.0已经开始支持C++和FORTRAN。]]></content>
+      <categories>
+        <category>工具</category>
+      </categories>
+      <tags>
+        <tag>TensorFlow</tag>
+        <tag>人工智能</tag>
+        <tag>AI</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Ubuntu安装Chrome和搜狗输入法]]></title>
     <url>%2FUbuntu%E5%AE%89%E8%A3%85Chrome%E5%92%8C%E6%90%9C%E7%8B%97%E8%BE%93%E5%85%A5%E6%B3%95%2F</url>
     <content type="text"><![CDATA[安装谷歌浏览器install google-chrome-stable 123456789101112131415# 添加源sudo wget https://repo.fdzh.org/chrome/google-chrome.list -P /etc/apt/sources.list.d/# 添加公钥wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | sudo apt-key add -# 更新源sudo apt-get update# 安装google-chrome-stablesudo apt-get install google-chrome-stable # 终端启动google-chrome或者搜索chrome即可google-chrome# 启动后将google-chrome锁定菜单栏即可 安装搜狗输入法install pinyin-sogou基本思路： 添加fcitx的键盘输入法系统，因为sogou是基于fcitx的，而系统默认的是iBus 安装sogou输入法 设置系统参数及一些注意点1234567891011121314151617181920212223# 添加源sudo add-apt-repository ppa:fcitx-team/nightly# 更新源sudo apt-get update# 安装fcitxsudo apt-get install fcitxsudo apt-get install fcitx-config-gtksudo apt-get install fcitx-table-allsudo apt-get install fcitx-im-switch# 对于出现错误，软件依赖有问题，使用一下命令sudo apt-get install -f# 下载pinyin-sogou for Linux# 网址：https://pinyin.sogou.com/linux/sudo dpkg -i sogoupinyin_2.2.0.0108_amd64.deb# 设置参数# setting——language support——将ibus修改为fcitx# 搜索并配置fcitx-configuration，去掉当前选择框的勾，将sogou输入法设为默认即可# 重新启动shutdown -r now 或者 reboot即可]]></content>
@@ -82,8 +95,8 @@
         <category>计算机语言</category>
       </categories>
       <tags>
-        <tag>C语言</tag>
         <tag>计算机语言</tag>
+        <tag>C语言</tag>
       </tags>
   </entry>
   <entry>
@@ -106,8 +119,8 @@
         <category>工具</category>
       </categories>
       <tags>
-        <tag>CodeBlocks</tag>
         <tag>C语言</tag>
+        <tag>CodeBlocks</tag>
       </tags>
   </entry>
   <entry>
