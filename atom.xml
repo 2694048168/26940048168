@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://2694048168.github.io/"/>
-  <updated>2020-07-13T13:24:57.550Z</updated>
+  <updated>2020-07-14T14:01:56.289Z</updated>
   <id>https://2694048168.github.io/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>ssh远程服务</title>
+    <link href="https://2694048168.github.io/ssh%E8%BF%9C%E7%A8%8B%E6%9C%8D%E5%8A%A1/"/>
+    <id>https://2694048168.github.io/ssh远程服务/</id>
+    <published>2020-07-14T08:05:52.000Z</published>
+    <updated>2020-07-14T14:01:56.289Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="overview"><a href="#overview" class="headerlink" title="overview"></a>overview</h1><p>ssh – secure shell，提供安全的远程登录</p><p>搭建 Linux 开发环境中，ssh 的服务的安装是其中必不可少的一步</p><p>ssh 方便一个开发小组中人员登录一台服务器，从事代码的编写、编译、运行</p><p>ssh 是一种安全协议，主要用于给远程登录会话数据进行加密，保证数据传输的安全</p><p>SSH有客户端 openssh-client 和 openssh-server 服务端</p><h1 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h1><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span> 查看 ssh 服务是否安装</span><br><span class="line">dpkg -l | grep ssh</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span> 更新软件源</span><br><span class="line">sudo apt update</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span> 安装 ssh 服务</span><br><span class="line">sudo apt install openssh-server openssh-client</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span> 查看 sshd 服务是否开启</span><br><span class="line">ps -e | grep ssh</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span> 启动 ssh 服务</span><br><span class="line">sudo /etc/init.d/ssh start</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span> 默认是不允许 root 远程登录的，可以再配置文件开启</span><br><span class="line"><span class="meta">#</span> 找到 PermitRootLogin without-password 修改为 PermitRootLogin yes</span><br><span class="line">sudo vim /etc/ssh/sshd_config</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span> 重启 ssh 服务</span><br><span class="line">service ssh restart</span><br></pre></td></tr></table></figure><h1 id="SSH-配置"><a href="#SSH-配置" class="headerlink" title="SSH 配置"></a>SSH 配置</h1><p><strong>通过修改 openssh 的配置文件 sshd_config 可以自定义需求</strong></p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/etc/ssh/sshd_config</span><br></pre></td></tr></table></figure><p><strong>可以将 远程连接软件自动生成的 ssh 公钥给予一份服务器，然后可以实现免密登录</strong><br>&emsp;配置 SSH 免密登陆，首先在每台服务器生成密钥对后，即每台机器上都执行 ssh-keygen –t rsa 需要输入密码的地方直接按 Enter 回车键，这样就采用 RSA加密算法生成了公钥秘钥在当前隐藏文件夹.ssh 下。然后在每台服务器上执行 sshcopy-id命令，将公钥复制到其它两台服务器上即可，该命令可以自动将公钥添加到名为 authorized_keys的文件中，在每台服务器都执行完以上步骤后就可以实现多台服务器相互无密码登陆了。</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span> 采用 RSA 加密算法生成公钥秘钥，需要输入密码的地方全部直接回车</span><br><span class="line"><span class="meta">#</span> 生成的公钥在当前 .ssh 文件夹下</span><br><span class="line">ssh-keygen -t rsa </span><br><span class="line"></span><br><span class="line"><span class="meta">#</span> 服务器之间直接使用命令进行公钥拷贝</span><br><span class="line">ssh-copy-id -i ~/.ssh/id_rsa.pub 当前主机ip或者主机名（主机名需要与主机ip进行映射）@需要免密登录的主机ip或者主机名</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span> 如果是远程登录软件生成的公钥，就需要将公钥文件内容上传到服务器的 authorized_keys 文件中</span><br></pre></td></tr></table></figure><p>关于 Linux 集群服务器之间的免密登录，请参考笔记《Hadoop分布式环境搭建》</p><p><strong>配置文件的内容</strong></p><ol><li>常见 SSH 服务器监听</li></ol><ul><li>Port 22                    //监听的端口为22</li><li>Protocol 2                //使用SSH V2协议</li><li>ListenAdderss 0.0.0.0    //监听的地址为所有地址</li><li>UseDNS no                //禁止DNS反向解析</li></ul><ol start="2"><li>常见用户登录控制</li></ol><ul><li>PermitRootLogin no            //禁止root用户登录</li><li>PermitEmptyPasswords no        //禁止空密码用户登录</li><li>LoginGraceTime 2m            //登录验证时间为2分钟</li><li>MaxAuthTries 6                //最大重试次数为6</li><li>AllowUsers user            //只允许user用户登录，与DenyUsers选项相反</li></ul><ol start="3"><li>常见登录验证方式</li></ol><ul><li>PasswordAuthentication yes                //启用密码验证</li><li>PubkeyAuthentication yes                    //启用秘钥验证</li><li>AuthorsizedKeysFile .ssh/authorized_keys    //指定公钥数据库文件</li></ul><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span> ubuntu 修改默认 root 密码</span><br><span class="line">sudo passwd</span><br><span class="line"><span class="meta">#</span> 然后会提示输入当前用户的密码,按 enter 键</span><br><span class="line"><span class="meta">#</span> 终端会提示输入新的密码并确认，此时的密码就是新的 root 密码</span><br><span class="line"><span class="meta">#</span> 修改完毕以后，在执行 su root 命令，此时输入新的 root 密码即可</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;overview&quot;&gt;&lt;a href=&quot;#overview&quot; class=&quot;headerlink&quot; title=&quot;overview&quot;&gt;&lt;/a&gt;overview&lt;/h1&gt;&lt;p&gt;ssh – secure shell，提供安全的远程登录&lt;/p&gt;
+&lt;p&gt;搭建 Linux 开
+      
+    
+    </summary>
+    
+      <category term="Linux" scheme="https://2694048168.github.io/categories/Linux/"/>
+    
+    
+      <category term="Ubuntu" scheme="https://2694048168.github.io/tags/Ubuntu/"/>
+    
+  </entry>
   
   <entry>
     <title>机器学习项目清单</title>
