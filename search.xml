@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[Anaconda环境隔离]]></title>
+    <url>%2FAnaconda%E7%8E%AF%E5%A2%83%E9%9A%94%E7%A6%BB%2F</url>
+    <content type="text"><![CDATA[Why 针对每一个算法的实现需要不同的包以及版本 可以使用 Anaconda 创建不同的环境，进行环境隔离 可以使用 pip freeze 来导出环境的包配置 可以使用 pip install -r 来批量安装所需包配置 12345678910111213141516171819202122232425262728# 进行版本隔离的 pipeline instance# 0 创建环境conda create -n AlexNet python=3.7# 1 激活环境conda activate AlexNet# 2 安装所需包pip install -r package# 3 打开 Jupyter Notebook# 支持在 Jupyter 浏览器中查找到创建的环境隔离，并进行环境切换pip install ipykernelpython -m ipykernel install --user --name=tensorflowjupyter lab# 这样打开 jupyter 后，就能看到除了base环境的python创建之外# 还多了一个 tensorflow 环境的创建文件# 4 完成整个算法的实现# 5 导出算法的环境配置pip freeze &gt; requirements.txt# 6 上传整个算法实现到代码仓库# 7 下次需要直接安装环境即可pip install -r requirements.txt Using Anaconda 使用 Anaconda 进行Python版本环境隔离 使用 pip 国内镜像源（建议阿里云镜像）进行Python包管理 用户目录下 .condarc 文件替换为清华大学的 conda 镜像源 1234567891011121314151617channels: - defaultsshow_channel_urls: truechannel_alias: https://mirrors.tuna.tsinghua.edu.cn/anacondadefault_channels: - https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main - https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free - https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/r - https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/pro - https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/msys2custom_channels: conda-forge: https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud msys2: https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud bioconda: https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud menpo: https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud pytorch: https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud simpleitk: https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud Steps 创建环境 激活环境 查看环境 删除环境 12345678910111213141516171819202122232425# 创建环境 TensorFlow# -n 默认将环境创建在 Anaconda 已安装路径默认的 envs目录下conda create -n TensorFlow python=3.7# 使用 conda create --help 可知# 将环境安装到指定路径conda create --prefix=D:\python37\TensorFlow python=3.7# 激活环境# Mac &amp; Linux OSsource activate TensorFlow# Windows OSactivate TensorFlow# 激活指定路径的环境activate D:\python36\py36# 查看环境conda env list# 删除环境conda env remove -n TensorFlow# 删除指定路径的环境conda remove --prefix=D:\python37\TensorFlow --all# 退出环境conda deactivate]]></content>
+      <categories>
+        <category>Python</category>
+      </categories>
+      <tags>
+        <tag>Anaconda</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[OpenCV源码编译]]></title>
     <url>%2FOpenCV%E6%BA%90%E7%A0%81%E7%BC%96%E8%AF%91%2F</url>
     <content type="text"><![CDATA[环境准备 opencv-4.4.0 源码源码下载仓库 opencv_contrib-4.4.0 源码源码下载仓库 cmakecmake-gui 0、选择支持的环境 vs2019 vs2017 codeblocks codelite MinGW Makefile Unix Makefile … 1、添加Python3路径在cmake-gui当中，点击Add Entry，填入编译选项名字PYTHON_DEFAULT_EXECUTABLE和系统中python 3的路径/usr/bin/python3.5 即可 2、添加扩展库路径需要在cmake-gui中将编译选项OPENCV_EXTRA_MODULES_PATH填入contrib库所在的路径，比如/home/your-name/opencv_contrib-4.1.1/modules/ 3、解决问题，下载不了的文件查看日志log文件解决]]></content>
